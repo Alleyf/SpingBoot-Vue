@@ -1,0 +1,107 @@
+spring:
+  mail:
+    # 邮件发送服务
+    host: smtp.qq.com
+    # 用户名
+    username: alleyf@qq.com
+    # 密码
+    password: jkqzadhcaqbcdegf
+  rabbitmq:
+    # 连接地址
+    addresses: localhost
+    port: 5672
+    # 用户名
+    username: admin
+    # 密码
+    password: admin
+    # 虚拟主机
+    virtual-host: /
+  devtools:
+    # 远程重启
+    remote:
+      restart:
+        enabled: true
+  datasource:
+    # 驱动类
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 连接地址
+    url: jdbc:mysql://localhost:3306/spdemo?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    # 用户名
+    username: root
+    # 密码
+    password: 123456
+  security:
+    # 过滤器
+    filter:
+      order: -100
+    # 用户配置：用数据库取代了本配置就失效了
+    user:
+      # 用户名
+      name: root
+      # 密码
+      password: 123456
+      # 角色
+      roles:
+        - USER
+        - ADMIN
+    # jwt
+    jwt:
+      # 秘钥
+      secret: "abcdefjhijklmn"
+      # 过期时间
+      expire: 7  # 七天过期
+  data:
+    # redis
+    redis:
+      # 主机
+      host: localhost
+      # 端口
+      port: 6379
+      # 密码
+      password: 123456
+      # 超时时间
+      timeout: 2000
+      # jedis
+      jedis:
+        # 连接池
+        pool:
+          # 最大连接数
+          max-active: 10
+          # 最大空闲连接数
+          max-idle: 5
+          # 最小空闲连接数
+          min-idle: 1
+          # 最大等待时间
+          max-wait: 2000
+# springdoc-openapi项目配置，访问地址：http://127.0.0.1:8080/doc.html
+springdoc:
+  swagger-ui:
+    # 路径
+    path: /swagger-ui.html
+    # 标签排序
+    tags-sorter: alpha
+    # 操作排序
+    operations-sorter: alpha
+  # api文档
+  api-docs:
+    # 路径
+    path: /v3/api-docs
+  # 分组配置
+  group-configs:
+    # 分组
+    - group: 'default'
+      # 路径匹配
+      paths-to-match: '/**'
+      # 扫描包
+      packages-to-scan: com.example
+# knife4j的增强配置，不需要增强可以不配
+knife4j:
+  # 是否开启
+  enable: true
+  # 设置
+  setting:
+    # 语言
+    language: zh_cn
+server:
+  # 端口
+  port: 8081
