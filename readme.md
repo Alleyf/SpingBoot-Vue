@@ -1,6 +1,21 @@
 # SpringBoot+Vue前后端分离实战项目
 
-![](https://picsum.photos/800/250)
+<div align="center">
+  <img src="https://img.shields.io/badge/branch-master-brightgreen.svg">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+  <img src="https://jaywcjlove.github.io/sb/lang/chinese.svg">
+</div>
+<div align="center">
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/Alleyf">
+<img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Alleyf/SpingBoot-Vue">
+<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Alleyf/SpingBoot-Vue">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/Alleyf/SpingBoot-Vue">
+</div>
+
+</div>
+<div align="center">
+<img alt="cover" src="https://picsum.photos/800/250">
+</div>
 
 ## 项目简介
 
